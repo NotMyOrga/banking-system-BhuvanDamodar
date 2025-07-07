@@ -22,6 +22,7 @@ public class BankAccount {
     public boolean withdraw(double amount) {
         if (balance >= amount){
             balance -= amount;
+            return true;
         }
         return false;
     }
